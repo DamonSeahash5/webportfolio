@@ -2,10 +2,10 @@
 //I will need an active /inactive state for each project
 import classes from "./Project.module.css";
 
-function Project() {
+function Project({ isActive, onClick }) {
     return (
         <>
-            <div className={classes.div}>sampletext</div>
+            <div className={`${classes.project} ${isActive ? classes.active : ""}`} onClick={onClick}>sampletext</div>
         </>
     );
 };
