@@ -4,12 +4,20 @@
 .inactiveButton {}
 
 .activeButton {} */
+.buttonContainer {
+    position: fixed;
+    top: 10px;
+    right: 200px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
 
 .container {
     position: fixed;
     top: 60px;
-    left: 800px;
-    right: 0;
+    right: 200px;
     width: 600px;
     height: 100%;
     /* flex-shrink: 0; */
@@ -19,18 +27,26 @@
     padding-bottom: 20px;
 }
 
-.architectureButton {
-    position: fixed;
+
+.architectureButton,
+.softwareButton {
     width: 300px;
     height: 60px;
-    top: 0;
-    left: 800px
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: lightgray;
+    transition: all 0.3s;
 }
 
-.softwareButton {
-    position: fixed;
-    width: 300px;
-    height: 60px;
-    top: 0;
-    left: 1100px
+.architectureButton.active,
+.softwareButton.active {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+
+.architectureButton:hover,
+.softwareButton:hover {
+    background-color: darkgray;
 }
