@@ -1,7 +1,8 @@
 import CustomComponent from "./CustomComponent.jsx"
+import placeholder from "../assets/Nightview1.jpg"
 
 const projectsData = [
-    { id: 1, title: "Modern House", type: "image", category: "architecture", content: "house.jpg" },
+    { id: 1, title: "Modern House", type: "image", category: "architecture", content: placeholder },
     { id: 2, title: "Bridge Design", type: "image", category: "architecture", content: "bridge.jpg" },
     { id: 3, title: "Weather App", type: "component", category: "software", content: <CustomComponent /> },
     { id: 4, title: "E-Commerce Website", type: "text", category: "software", content: "Built with React & Node.js" },

@@ -1,5 +1,5 @@
 import classes from "./ProjectsContainer.module.css";
-import Project from "../Project.jsx";
+import Project from "./Project.jsx";
 import { useState } from "react";
 import projectsData from "./ProjectsDB.jsx";
 
