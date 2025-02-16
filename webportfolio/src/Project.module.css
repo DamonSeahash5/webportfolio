@@ -1,0 +1,11 @@
+/* .inactiveProject {}
+
+.activeProject {} */
+
+.div {
+    width: auto;
+    height: 380px;
+    /* flex-shrink: 0; */
+    background: white;
+    margin: 20px
+}
