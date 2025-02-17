@@ -32,16 +32,20 @@
 .softwareButton {
     width: 300px;
     height: 60px;
-    font-size: 16px;
+    font-size: 20px;
+    /* color: white; */
     cursor: pointer;
     border: none;
     background-color: lightgray;
     transition: all 0.3s;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    /* transform: skew(-5deg); */
 }
 
 .architectureButton.active,
 .softwareButton.active {
-    background-color: steelblue;
+    background-color: darkgray;
     color: white;
     font-weight: bold;
 }

@@ -29,7 +29,7 @@ function Projectscontainer() {
                 className={classes.container}>  {filteredProjects.map((project, index) => (
                     <Project
                         key={project.id}
-                        title={project.title}
+                        // title={project.title}
                         type={project.type}
                         content={project.content}
                         isActive={activeProject === index}

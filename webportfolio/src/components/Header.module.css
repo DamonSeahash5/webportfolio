@@ -1,17 +1,31 @@
 .header {
-    background-color: #D9D9D9;
+    background-color: rgba(217, 217, 217, 0.7);
     /* background-image: url("../assets/Nightview1.jpg"); */
-    opacity: 70%;
     /* background-position: 100px; */
+    border-color: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 15px;
     position: fixed;
-    top: 200px;
+    top: 100px;
     left: -100px;
     width: 1000px;
-    height: 300px;
+    height: 250px;
     transform: skew(-20deg);
     border-top-right-radius: 40px;
     border-bottom-right-radius: 30px;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     box-shadow: 4px 6px 4px 5px rgba(0, 0, 0, 0.50);
+}
+
+
+.textContainer {
+    /* background-color: white; */
+    color: black;
+    height: 50px;
+    width: 800px;
+    position: fixed;
+    left: 50px;
+    top: 150px;
+    z-index: 10;
 }

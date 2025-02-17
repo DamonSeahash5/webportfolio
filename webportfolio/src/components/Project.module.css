@@ -14,14 +14,21 @@
 
 .project.active {
     position: fixed;
-    top: 10%;
-    left: 5%;
-    width: 90%;
-    height: 80%;
-    background-color: white;
-    z-index: 1000;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ✅ Centers it */
+    width: 80vw;
+    height: auto;
+    /* ✅ Adjust height dynamically */
+    max-height: 90vh;
+    /* ✅ Prevents it from going off-screen */
+    object-fit: contain;
+    /* ✅ Ensures image scales properly */
+    overflow: hidden;
+    /* ✅ No scrolling */
+    z-index: 10;
+    /* ✅ Ensures it's above everything */
 }
 
 .projectImage {
