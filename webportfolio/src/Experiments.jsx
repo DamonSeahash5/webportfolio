@@ -8,8 +8,7 @@ function Experiments() {
     return (
         <div className={classes.container}>
             <h1 className={classes.title}>Experiments page</h1>
-            <img src={image1} />
-
+            <img src={image1} className={classes.images} />
         </div>
     );
 };
