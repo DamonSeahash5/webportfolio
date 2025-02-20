@@ -25,6 +25,19 @@
     padding: 20px;
 }
 
+.images.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ✅ Centers it */
+    width: auto;
+    height: 80vh;
+    max-height: 90vh;
+    overflow: hidden;
+    z-index: 10;
+}
+
 .inLineDiv {
     display: flex;
     align-items: flex-start;
@@ -32,4 +45,9 @@
 
 .videoContainer {
     margin: 20px;
+}
+
+.threeDContainer {
+    width: 100%;
+    height: 500px;
 }

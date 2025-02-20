@@ -6,6 +6,13 @@ import Header from "./components/Header.jsx";
 import Experiments from './Experiments.jsx';
 
 function App() {
+  const [activeImage, setActiveImage] = useState(false);
+  function handleImageClick() {
+    //controls the state change when /Experiments image is clicked
+    //toggles the state by change
+    setActiveImage(activeImage => !activeImage)
+  };
+
   return (
     <>
       <Router>
@@ -16,7 +23,7 @@ function App() {
               <Projectscontainer />
             </>
           } />
-          <Route path="/experiments" element={<Experiments />} />
+          <Route path="/experiments" element={<Experiments isActive={activeImage} onClick={handleImageClick} />} />
         </Routes>
       </Router>
     </>
