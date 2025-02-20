@@ -1,16 +1,18 @@
 .container {
-    display: flex;
+    /* display: flex; */
     background-color: #f0f0f0;
     background-image: none;
-    width: 100vh;
-    height: 100vh;
+    width: 80vh;
+    height: auto;
     padding: 20px;
-    z-index: 10;
+    text-align: left;
+    /* z-index: 10; */
 }
 
 .title {
     font-size: 24px;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .content {
@@ -20,4 +22,14 @@
 
 .images {
     max-height: 500px;
+    padding: 20px;
+}
+
+.inLineDiv {
+    display: flex;
+    align-items: flex-start;
+}
+
+.videoContainer {
+    margin: 20px;
 }
